@@ -80,9 +80,10 @@
         <div class="col-md-1 col-lg-1"></div>
         <div class="col-md-2 col-lg-2">
           <div class="well color">
-            <h5 align="center">Where?</h5>
+            <h3 align="center">Where?</h3>
             <div class="btn-group button-right button-header">
-              <input id="inputcity" type="text" name="City Neighborhood" placeholder="e.g. write a place" required="required" />
+              <small class="form-text text-muted">Provide information about the place where you want to explore. And click on submit.</small>
+              <input id="inputcity" type="text" name="City Neighborhood" placeholder="e.g. a place, street, etc." required="required" />
             <button id="buttonsubmit" type="button" class="btn btn-primary" onclick="updateData()">Submit</button>
             </div>
           </div>
@@ -91,6 +92,7 @@
         <div class="col-md-8 col-lg-8">
           <div class="well color">
             <h3 align="center"><strong>Prices at Service Stations</strong></h3>
+            <h4 align="center">Shows the stations within a 5 km radius around the searched point and the average prices of the displayed subset</h4>
               <div id="NewMessage">
                 <h4 id="message" align="center"><strong></strong></h4>
               </div>

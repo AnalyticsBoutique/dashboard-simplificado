@@ -17,7 +17,7 @@ function mapping(data, Coordenadas) {
     
   // For each station, create a marker and bind a popup with the station's name
   for (var index = 0; index < data.data.length; index++) {
-    if ( getKilometros(Coordenadas[1], Coordenadas[0], parseFloat(data.data[index].lat), parseFloat(data.data[index].lng) ) <= 10 ){
+    if ( getKilometros(Coordenadas[1], Coordenadas[0], parseFloat(data.data[index].lat), parseFloat(data.data[index].lng) ) <= 5 ){
       var stationMarker = L.marker([data.data[index].lat, data.data[index].lng]).bindPopup("<h4>" 
                           + data.data[index].name + "<h4><h4>Franquicia: " 
                           + data.data[index].Franquicia_Marca + "<h4><h4>Permiso: " 
@@ -54,7 +54,7 @@ function mapping(data, Coordenadas) {
         // Create the map object with options
         var map = L.map("map", {
           center: [Coordenadas[1], Coordenadas[0]],
-          zoom: 12,
+          zoom: 13,
           layers: [lightmap, stationMarkers]
           });
     
@@ -141,7 +141,7 @@ function updateData() {
 
     d3.select("#message").remove();
 
-    d3.select("#NewMessage").html("<h4 id=\"message\" align=\"center\"><strong> Please be more specific about the location or consider only locations in Mexico </strong></h4>");
+    d3.select("#NewMessage").html("<h4 id=\"message\" align=\"center\" style=\"color: red\"><strong> Please be more specific about the location or consider only locations in Mexico </strong></h4>");
 
   };
   });
