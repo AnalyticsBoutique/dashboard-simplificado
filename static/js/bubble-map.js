@@ -96,7 +96,7 @@ function createMap(GasPrice) {
     
     legend.onAdd = function() {
         var legend_loc = L.DomUtil.create("div", "info legend");
-        var levels = [15, 16, 17, 18, 19]
+        var levels = [15, 18, 19, 20, 21]
         var legend_li = [];
 
         // 
@@ -118,11 +118,11 @@ function createMap(GasPrice) {
 // 
 function getColor(magnituge) {
     switch (true) {
-    case magnituge >= 20.0:
+    case magnituge >= 21.0:
             return '#666A86';
             break;
 
-    case magnituge >= 19.0:
+    case magnituge >= 20.0:
         return '#788AA3';
         break;
 
@@ -134,11 +134,11 @@ function getColor(magnituge) {
     //    return 'gold';
     //    break;
 
-    case magnituge >= 18.0:
+    case magnituge >= 19.0:
         return '#92B6B1';
         break;
 
-    case magnituge >= 17.0:
+    case magnituge >= 18.0:
         return '#B2C9AB';
         break;
 
@@ -241,7 +241,7 @@ function createMap_p(GasPrice) {
     
     legend.onAdd = function() {
         var legend_loc = L.DomUtil.create("div", "info legend");
-        var levels = [15, 16, 17, 18, 19]
+        var levels = [15, 18, 19, 20, 21]
         var legend_li = [];
 
         // 
@@ -263,11 +263,11 @@ function createMap_p(GasPrice) {
 // 
 function getColor_p(magnituge) {
     switch (true) {
-    case magnituge >= 20.0:
+    case magnituge >= 21.0:
             return '#666A86';
             break;
 
-    case magnituge >= 19.0:
+    case magnituge >= 20.0:
         return '#788AA3';
         break;
 
@@ -279,11 +279,11 @@ function getColor_p(magnituge) {
     //    return 'gold';
     //    break;
 
-    case magnituge >= 18.0:
+    case magnituge >= 19.0:
         return '#92B6B1';
         break;
 
-    case magnituge >= 17.0:
+    case magnituge >= 18.0:
         return '#B2C9AB';
         break;
 
@@ -386,7 +386,7 @@ function createMap_d(GasPrice) {
     
     legend.onAdd = function() {
         var legend_loc = L.DomUtil.create("div", "info legend");
-        var levels = [18.5, 19, 19.5, 20, 20.5]
+        var levels = [18.5, 20.5, 21, 21.5, 22]
         var legend_li = [];
 
         // 
@@ -408,11 +408,11 @@ function createMap_d(GasPrice) {
 // 
 function getColor_d(magnituge) {
     switch (true) {
-    case magnituge >= 21.0:
+    case magnituge >= 22.0:
             return '#666A86';
             break;
 
-    case magnituge >= 20.5:
+    case magnituge >= 21.5:
         return '#788AA3';
         break;
 
@@ -424,11 +424,11 @@ function getColor_d(magnituge) {
     //    return 'gold';
     //    break;
 
-    case magnituge >= 20:
+    case magnituge >= 21:
         return '#92B6B1';
         break;
 
-    case magnituge >= 19.5:
+    case magnituge >= 20.5:
         return '#B2C9AB';
         break;
 
